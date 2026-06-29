@@ -1,0 +1,20 @@
+def level1():
+  print("level 1")
+  print("The Story of a Successful Boy")
+
+adjective1 = input("Enter an adjective (description): ")
+noun1 = input("Enter a noun (person): ")
+adjective2 = input("Enter another adjective (description): ")
+verb1 = input("Enter a verb ending with 'ing': ")
+adjective3 = input("Enter one more adjective (description): ")
+
+print(f"Once upon a time, there was a {adjective1} boy named {noun1}.")
+print(f"Although he came from a small town, he dreamed of achieving great things in life.")
+print(f"Every single day, he spent hours {verb1} because he believed that hard work was the key to success.")
+print(f"Many people thought his dreams were impossible, but {noun1} never listened to negative comments.")
+print(f"He remained {adjective2}, determined, and focused on improving himself every day.")
+print(f"Whenever he faced difficulties, he treated them as opportunities to learn instead of giving up.")
+print(f"His teachers, friends, and family were amazed by his dedication and strong mindset.")
+print(f"After many years of patience, effort, and determination, {noun1} finally reached his goals.")
+print(f"He became a {adjective3} entrepreneur who inspired thousands of young people around the world.")
+print(f"His story reminds us that success does not come from luck but from believing in yourself, working hard, and never giving up on your dreams.")
