@@ -1,7 +1,17 @@
+import random
+
+QUOTES = [
+    "Success isn't about being the best. It's about being better than you were yesterday.",
+    "Small, consistent actions create extraordinary results over time.",
+    "Dream big, start small, act now.",
+    "Every expert was once a beginner.",
+    "Your future is created by what you do today, not tomorrow."
+]
+
 def get_random_quote():
-    """Return a single random motivational quote."""
-    import random
     return random.choice(QUOTES)
+
+print(get_random_quote())
  
  
 def level9():
@@ -9,7 +19,7 @@ def level9():
     print("Motivation Quote Generator\n")
  
     while True:
-        print(f"💬 \"{get_random_quote()}\"\n")
+        print(f" \"{get_random_quote()}\"\n")
         again = input("Want another quote? (y/n): ").strip().lower()
         if again != "y":
             break

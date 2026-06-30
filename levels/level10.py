@@ -29,7 +29,8 @@ while True:
             print("Please use the format YYYY-MM-DD.")
  
 days_left = (target_date - datetime.date.today()).days
-quote = get_random_quote()
+quote = input(f"Small, consistent actions create extraordinary results over time")
+
  
 dashboard = {
         "name": name,
