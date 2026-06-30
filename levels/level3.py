@@ -1,14 +1,10 @@
-
-def level3():
-     print("level 3")
-print("manage your own live")
-print("this level is going to make you improve your goals in live")
-
 import calendar
 import json
 from datetime import datetime
 
 FILE_NAME = "goals.json"
+
+
 def load_goals():
     try:
         with open(FILE_NAME, "r") as file:
@@ -22,13 +18,11 @@ def save_goals(goals):
         json.dump(goals, file, indent=4)
 
 
-
 def show_calendar():
     year = int(input("Enter year: "))
     month = int(input("Enter month (1-12): "))
     print()
     print(calendar.month(year, month))
-
 
 
 def add_goal(goals):
@@ -41,9 +35,7 @@ def add_goal(goals):
     print("\n Goal saved successfully!\n")
 
 
-
 def view_goals(goals):
-
     if not goals:
         print("\nNo goals found.\n")
         return
@@ -56,9 +48,7 @@ def view_goals(goals):
     print()
 
 
-
 def delete_goal(goals):
-
     date = input("Enter the date of the goal to delete: ")
 
     if date in goals:
@@ -69,12 +59,14 @@ def delete_goal(goals):
         print("Goal not found.\n")
 
 
-def main():
+def level3():
+    print("\n--- Level 3 ---")
+    print("Manage your own goal calendar")
+    print("This level is going to help you improve your goals over time.\n")
 
     goals = load_goals()
 
     while True:
-
         print("=" * 35)
         print("      MY GOAL CALENDAR")
         print("=" * 35)
@@ -106,11 +98,8 @@ def main():
             print()
 
         elif choice == "6":
-            print("\nGood luck achieving your goals! ")
+            print("\nGood luck achieving your goals!")
             break
 
         else:
             print("\nInvalid option.\n")
-
-
-main()

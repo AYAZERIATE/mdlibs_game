@@ -8,20 +8,19 @@ QUOTES = [
     "Your future is created by what you do today, not tomorrow."
 ]
 
+
 def get_random_quote():
     return random.choice(QUOTES)
 
-print(get_random_quote())
- 
- 
+
 def level9():
     print("\n--- Level 9 ---")
     print("Motivation Quote Generator\n")
- 
+
     while True:
         print(f" \"{get_random_quote()}\"\n")
         again = input("Want another quote? (y/n): ").strip().lower()
         if again != "y":
             break
- 
+
     print("\nKeep that quote in mind as you work toward your goals.")
