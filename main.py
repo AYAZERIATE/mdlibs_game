@@ -1,48 +1,43 @@
-from levels.level1 import level1
-from levels.level2 import level2
-from levels.level3 import level3
-from levels.level4 import level4
-from levels.level5 import level5
-
-
 def main():
-    print("=" * 50)
-    print(" WELCOME TO PAINT YOUR OWN SUCCESS STORY ")
-    print("=" * 50)
-
+    levels = {
+        "1": level1,
+        "2": level2,
+        "3": level3,
+        "4": level4,
+        "5": level5,
+        "6": level6,
+        "7": level7,
+        "8": level8,
+        "9": level9,
+        "10": level10,
+    }
+ 
     while True:
-        print("\nChoose a level:")
-        print("1. Level 1 - Story of a Successful Boy")
-        print("2. Level 2 - Create Your Success Story")
-        print("3. Level 3 - Goal Calendar")
-        print("4. Level 4 - Goal Priorities")
-        print("5. Level 5 - Paint Your Own Goals")
-        print("6. Exit")
-
-        choice = input("\nEnter your choice (1-6): ")
-
-        if choice == "1":
-            level1()
-
-        elif choice == "2":
-            level2()
-
-        elif choice == "3":
-            level3()
-
-        elif choice == "4":
-            level4()
-
-        elif choice == "5":
-            level5()
-
-        elif choice == "6":
-            print("\n Thank you for using Paint Your Own Success Story!")
+        print("\n══════════════════════════════")
+        print("   SUCCESS STORY — LEVEL MENU")
+        print("══════════════════════════════")
+        print("1.  Mad Lib story")
+        print("2.  Personalized story")
+        print("3.  Multi-goal list builder")
+        print("4.  Goal priority calculator")
+        print("5.  Paint your own goals")
+        print("6.  Weekly habit tracker")
+        print("7.  Goal countdown")
+        print("8.  Save your story to a file")
+        print("9.  Motivation quote generator")
+        print("10. Full success dashboard")
+        print("Q.  Quit")
+ 
+        choice = input("\nChoose a level: ").strip().lower()
+ 
+        if choice == "q":
+            print("Goodbye — keep chasing your goals!")
             break
-
+        elif choice in levels:
+            levels[choice]()
         else:
-            print(" Invalid choice. Please try again.")
-
-
+            print("Not a valid option, try again.")
+ 
+ 
 if __name__ == "__main__":
     main()
