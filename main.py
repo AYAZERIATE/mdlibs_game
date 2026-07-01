@@ -1,19 +1,19 @@
 def level1():
-    print("\n📖 Mad Lib Story")
+    print("\n Mad Lib Story")
     name = input("Enter your name: ")
     goal = input("Enter your dream goal: ")
     print(f"\n{name} worked hard every day and finally achieved {goal}!")
 
 
 def level2():
-    print("\n✨ Personalized Story")
+    print("\n Personalized Story")
     name = input("Your name: ")
     career = input("Dream career: ")
     print(f"\nOne day, {name} became a successful {career}.")
 
 
 def level3():
-    print("\n🎯 Multi-Goal List Builder")
+    print("\n Multi-Goal List Builder")
     goals = []
 
     while True:
@@ -30,7 +30,7 @@ def level3():
 
 
 def level4():
-    print("\n📊 Goal Priority Calculator")
+    print("\n Goal Priority Calculator")
 
     goal = input("Goal name: ")
     importance = int(input("Importance (1-10): "))
@@ -43,16 +43,16 @@ def level4():
 
 
 def level5():
-    print("\n🎨 Paint Your Own Goals")
+    print("\n Paint Your Own Goals")
     print("Imagine your future success and describe it below:")
     dream = input("Your success vision: ")
 
-    print("\n🌟 Your Dream 🌟")
+    print("\n Your Dream ")
     print(dream)
 
 
 def level6():
-    print("\n📅 Weekly Habit Tracker")
+    print("\n Weekly Habit Tracker")
 
     habits = []
 
@@ -66,7 +66,7 @@ def level6():
 
 
 def level7():
-    print("\n⏳ Goal Countdown")
+    print("\n Goal Countdown")
 
     days = int(input("Days until your goal: "))
 
@@ -74,7 +74,7 @@ def level7():
 
 
 def level8():
-    print("\n💾 Save Your Story To A File")
+    print("\n Save Your Story To A File")
 
     story = input("Write your success story: ")
 
@@ -85,7 +85,7 @@ def level8():
 
 
 def level9():
-    print("\n💡 Motivation Quote Generator")
+    print("\n Motivation Quote Generator")
 
     import random
 
@@ -101,7 +101,7 @@ def level9():
 
 
 def level10():
-    print("\n🏆 FULL SUCCESS DASHBOARD")
+    print("\n FULL SUCCESS DASHBOARD")
 
     name = input("Your name: ")
     goal = input("Main goal: ")
@@ -114,7 +114,8 @@ def level10():
     print(f"Goal     : {goal}")
     print(f"Progress : {progress}%")
     print("══════════════════════")
-
+def level11():
+    print("\n Maximize Your Life Goals")
 
 def main():
     levels = {
@@ -128,6 +129,7 @@ def main():
         "8": level8,
         "9": level9,
         "10": level10,
+        "11": level11,
     }
 
     while True:
@@ -144,6 +146,7 @@ def main():
         print("8.  Save your story to a file")
         print("9.  Motivation quote generator")
         print("10. Full success dashboard")
+        print("11. Maximize Your Life Goals")
         print("Q.  Quit")
 
         choice = input("\nChoose a level: ").strip().lower()
